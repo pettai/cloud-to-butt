@@ -1,8 +1,8 @@
 {
 	"manifest_version": 2,
-	"name": "Cloud To Butt Plus",
-	"version": "1.2",
-	"description": "Replaces the text 'the cloud' with 'my butt', as well as 'cloud' with 'butt' in certain contexts.",
+	"name": "Buzzwords 2 Butties (B2B) edition",
+	"version": "1.0",
+	"description": "Originally, replace the text 'the cloud' with 'my butt', as well as 'cloud' with 'butt' in certain contexts. Now, updated to cover IoT, Blockchain, OpenFlow, SDN, and other technology buzzwords",
 	"content_scripts": 
 	[
 		{
