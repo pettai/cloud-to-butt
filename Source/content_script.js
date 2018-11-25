@@ -70,18 +70,19 @@ function handleText(textNode) {
     return p1 + "ysco";
   });
 
-  // Add SDN to the mix
-  v = v.replace(/\b(S|s)DN/g, function(match, p1, offset, string) {
-    // s - 18 = a
-    a = String.fromCharCode(p1.charCodeAt(0) - 18);
-    return a + "SS";
+  // Add Cyber to the mix
+  v = v.replace(/\b(C|c)yber/g, function(match, p1, offset, string) {
+    // c - 1 = b
+    b = String.fromCharCode(p1.charCodeAt(0) - 1);
+    return p1 + "yber" + b + "utt";
   });
 
+  // Add SDN to the mix
+  v = v.replace(/\bSDN/g, "ASS");
+
   // Add SD-WAN to the mix
-  v = v.replace(/\b(S|s)D-WAN/g, function(match, p1, offset, string) {
-    // s - 6 = m
-    m = String.fromCharCode(p1.charCodeAt(0) - 6);
-    return m + "Y-ASS";
+  v = v.replace(/\bSD(| |-)WAN/g, function(match, p1, offset, string) {
+    return "MY" + p1 + "ASS";
   });
 
   // Add OpenFlow to the mix
@@ -126,7 +127,7 @@ function handleText(textNode) {
     return b + "uttware" + p2 + a + "ssified";
   });
 
-// Add Internet of things to the mix
+// Add Internet of Things (IoT) to the mix
 v = v.replace(/\b(I|i)nternet (O|o)f (T|t)hings/g, function(match, p1, p2, p3, offset, string) {
   return p1 + "nternet " + p2 + "f " + p3 + "iny butts";
 });
